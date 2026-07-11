@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Codeforces Hint Assistant",
+  "description": "AI-powered Chrome extension that provides progressive hints for Codeforces problems.",
+  "version": "1.0.0",
+
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Codeforces Hint Assistant"
+  },
+
+  "background": {
+    "service_worker": "src/background/background.ts",
+    "type": "module"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://codeforces.com/problemset/problem/*/*",
+        "https://codeforces.com/contest/*/problem/*"
+      ],
+      "js": [
+        "src/content/content.ts"
+      ]
+    }
+  ],
+
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+
+  "host_permissions": [
+    "https://codeforces.com/*"
+  ]
+}
