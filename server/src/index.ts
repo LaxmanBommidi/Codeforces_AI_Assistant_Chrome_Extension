@@ -11,6 +11,10 @@ const PORT = process.env.PORT;
 app.use(express.json());
 app.use(cors());
 
+// API Health checks
+app.get('/' , (req : Request , res : Response) => {
+    res.send("Hi from Codeforces-AI-Hint-Assistant");
+});
 
 app.get('/health', (req: Request, res: Response) => {
   res.send('Hello, TypeScript Backend!');
