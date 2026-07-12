@@ -1,0 +1,46 @@
+:host {
+    all: initial;
+}
+
+.cf-ai-button {
+
+    position: fixed;
+
+    right: 24px;
+
+    bottom: 24px;
+
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.25);
+
+    transition: .25s;
+
+}
+
+.cf-ai-button:hover {
+
+    transform: scale(1.05);
+
+}
