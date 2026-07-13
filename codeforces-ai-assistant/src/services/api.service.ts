@@ -10,7 +10,7 @@ export interface HintsResponse {
 export async function generateHintsService( problem : Problem ) : Promise<HintsResponse> {
     
     const response = await fetch( 
-        "http://localhost:3000/api/hints",
+        "https://codeforces-ai-assistant-chrome-exte-virid.vercel.app/api/hints",
         {
             method : "POST",
             headers : {
