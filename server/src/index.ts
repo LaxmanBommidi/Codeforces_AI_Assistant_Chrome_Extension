@@ -22,6 +22,8 @@ app.get('/health', (req: Request, res: Response) => {
 
 app.use('/api/hints', hintRoutes);
 
+console.log(process.env.GEMINI_API_KEY)
+
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
 });
