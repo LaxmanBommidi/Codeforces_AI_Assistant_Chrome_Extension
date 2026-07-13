@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT;
 
 app.use(express.json());
-app.use(cors());
+app.use(cors()); 
 
 // API Health checks
 app.get('/' , (req : Request , res : Response) => {
