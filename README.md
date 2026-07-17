@@ -92,3 +92,6 @@ Create a `.env` file:
 GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 PORT=3000
 ```
+<img width="1505" height="561" alt="Screenshot 2026-07-13 221511" src="https://github.com/user-attachments/assets/fdadac5b-c917-4ca9-b18a-2fbef8dcb3cb" />
+<img width="415" height="547" alt="Screenshot 2026-07-13 222022" src="https://github.com/user-attachments/assets/df9a89c6-7fb0-492b-a853-97092aad6d4b" />
+
